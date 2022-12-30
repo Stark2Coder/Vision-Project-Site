@@ -1,0 +1,298 @@
+*{
+    font-family: 'Open Sans', 'sans-serif';
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--span-color);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #51c9ed;
+}
+:root {
+    --span-color: #51c9ed;
+    color: #daa520;
+}
+.logo-img {
+    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+/* Start Mani Page */
+.landing {
+    background-image: url(/images/background.jpg);
+    min-height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-size: cover;
+    position: relative;
+}
+.container {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+.landing .overlay {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.header {
+    position: relative;
+    color: #fff;
+    z-index: 2;
+    display: flex;
+    padding: 10px;
+}
+.header .logo {
+    width: 300px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.header .logo a{
+    width: 300px;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+.links .active {
+    color:var(--span-color);
+    transition: .5s;
+}
+.links .active:hover {
+    color: #357f96;
+}
+.links a {
+    color: #fff;
+    transition: 0.5s;
+}
+.links a:hover {
+    color: rgb(204, 204, 204);
+}
+.header ul {
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0px;
+    text-align: right;
+    font-size: 17px;
+}
+.header .links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.intro-text {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+.intro-text h1 {
+    font-size: 50px;
+}
+.landing-active {
+    color: var(--span-color)
+}
+.intro-text p {
+    line-height: 34px;
+    margin-bottom: 90px;
+}
+.dis {
+    margin-left: 30px;
+    background-color: var(--span-color);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.dis:hover {
+    color: #fff;
+    background-color: #357f96;
+}
+/* End Mani Page */
+
+
+/* Start About US */
+.about-us {
+    padding-top: 10px;
+    padding-bottom: 16vh;
+    padding-left: 50px;
+    display: flex;
+}
+.about-us .info-box {
+    flex: 1;
+}
+.about-us .info-box h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--span-color);
+}
+.about-us .info-box p {
+    width: 450px;
+    margin-bottom: 30px;
+}
+.about-us .info-box ul li {
+    list-style:lower;
+    margin-top: 50px;
+}
+.discord-js {
+    color: green;
+}
+.html {
+    color: orange;
+}
+.css {
+    color: lightskyblue;
+}
+.js {
+    color: rgb(206, 206, 0);
+}
+.bdfd {
+    color: gray;
+}
+.image-box {
+    margin-bottom: 260px;
+}
+.image-box img {
+    width: 500px;
+}
+.landing-links a {
+    color: #fff;
+    background-color: #51c9ed;
+    margin-bottom: 30px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 10px;
+    display: flex;
+    width: max-content;
+}
+/* End About US */
+.break-bar {
+    border-radius: 20px;
+    background-color: #51c9ed;
+    padding: 20px;
+}
+/* Start Skills */
+.skills {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    background-color: #dadada;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.skills h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--span-color);
+    margin: 0 0 50px;
+    text-align: center;
+}
+.skills .skills-box {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.skills .skills-box .skill-name {
+    font-weight: bold;
+    width: 100px;
+}
+.skills .skills-box .skill-progress {
+    background-color: #f1f1f1;
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+.skills .skills-box .skill-progress .html {
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--span-color);
+    border-radius: 3px;
+}
+.skills .skills-box .skill-progress .css {
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 95%;
+    height: 100%;
+    background-color: var(--span-color);
+    border-radius: 3px;
+}
+.skills .skills-box .skill-progress .bdfd {
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 85%;
+    height: 100%;
+    background-color: var(--span-color);
+    border-radius: 3px;
+}
+.skills .skills-box .skill-progress .dis-js {
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--span-color);
+    border-radius: 3px;
+}
+/* End Skills */
+
+/*Start footer */
+.bg-dark {
+    margin-top: 20px;
+    background-color: #dadada !important;
+}
+.text-secondary {
+    color: black !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.py-4 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+.px-5 {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+}
+body {
+    margin: 0;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+/*End footer */
